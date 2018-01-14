@@ -88,15 +88,13 @@ a*b=6
 
 1. 国内目前无法访问Tensorflow官网，但是可以访问谷歌提供的[Tensorflow官网镜像](https://tensorflow.google.cn/)。
 
-2. 国内使用NuGet安装TensorflowSharp很容易失败，可以直接从[Nuget官网](https://www.nuget.org/packages/TensorFlowSharp/)下载，然后改后缀名zip，解压后手工安装。
+2. TensorflowSharp项目使用的.net版本**必须**高于4.6.1，本教程使用的版本是4.7.0，可以在属性选项卡中设置。
 
-3. TensorflowSharp项目使用的.net版本**必须**高于4.6.1，本教程使用的版本是4.7.0，可以在属性选项卡中设置。
+3. TensorflowSharp项目必须使用64位CPU，需要在属性选项卡生成中，**去掉首选32位的勾选**。
 
-4. TensorflowSharp项目必须使用64位CPU，需要在属性选项卡生成中，**去掉首选32位的勾选**。
+4. 本教程需要在根目录新建`Libs`文件夹，请将第二步解压出来的`TensorFlowSharp.dll`放在该文件夹；另外运行示例还需要把`libtensorflow.dll`复制到每个项目的`bin/Debug`目录。如果提示找不到Tensorflow命名空间，请重新添加引用。
 
-5. 本教程需要在根目录新建`Libs`文件夹，请将第二步解压出来的`TensorFlowSharp.dll`放在该文件夹；另外运行示例还需要把`libtensorflow.dll`复制到每个项目的`bin/Debug`目录。如果提示找不到Tensorflow命名空间，请重新添加引用。
-
-6. 最新版libtensorflow.dll下载：http://ci.tensorflow.org/view/Nightly/job/nightly-libtensorflow-windows/lastSuccessfulBuild/artifact/lib_package/libtensorflow-cpu-windows-x86_64.zip
+5. 最新版libtensorflow.dll下载：http://ci.tensorflow.org/view/Nightly/job/nightly-libtensorflow-windows/lastSuccessfulBuild/artifact/lib_package/libtensorflow-cpu-windows-x86_64.zip
 
 ## 网站
 
